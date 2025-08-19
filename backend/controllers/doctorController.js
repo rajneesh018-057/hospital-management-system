@@ -52,7 +52,7 @@ const loginDoctor = async (req, res) => {
   }
 };
 
-// API to get doctor appointments for doctor panel
+
 const appointmentsDoctor = async (req, res) => {
   try {
     const { docId } = req.body;
@@ -65,7 +65,7 @@ const appointmentsDoctor = async (req, res) => {
   }
 };
 
-// API to mark appointment completed for doctor panel
+
 const appointmentComplete = async (req, res) => {
   try {
     const { docId, appointmentId } = req.body;
@@ -85,7 +85,7 @@ const appointmentComplete = async (req, res) => {
   }
 };
 
-// API to cancel appointment for doctor panel
+// cancel appointment
 const appointmentCancel = async (req, res) => {
   try {
     const { docId, appointmentId } = req.body;
@@ -105,7 +105,7 @@ const appointmentCancel = async (req, res) => {
   }
 };
 
-// API to get dashboard data for doctor panel
+// dashboard
 const doctorDashboard = async (req, res) => {
   try {
     const { docId } = req.body;
